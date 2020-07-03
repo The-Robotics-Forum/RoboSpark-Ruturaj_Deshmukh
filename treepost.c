@@ -67,7 +67,7 @@ int main()
     int arr[Max_Size], i, j, k;
     char chk;
 
-    printf(">> Please enter the elements which you want in your BST: \n");
+    printf(">> Enter elements\n");
     for(i=0;i<No_Of_Nodes;i++)
     {
         scanf("%d", &arr[i]);
@@ -87,7 +87,7 @@ int main()
     }
 
     // postorder
-    printf(">> Do you want to check the postorder of the  [y/n] : ");
+    printf(">> Check Postorder Traversals  [y/n] : ");
     fflush(stdin);
     scanf("%c", &chk);
 
@@ -98,22 +98,22 @@ int main()
     }
 
     // Searching
-    printf("\n>> Do you wish to check any presence of a value in the BST [y/n] : ");
+    printf("\n>> Check if the node is present [y/n] : ");
     fflush(stdin);
     scanf("%c", &chk);
 
     if(chk == 'y')
     {
-        printf(">> Please enter the value which you want to search in your BST: \n");
+        printf(">> Enter value to search \n");
         scanf("%d", &k);
 
         if (search(node, k)==0)
         {
-            printf("Unfortunately the node with the value '%d' is NOT present in the BST!!!", k);
+            printf("Nope he valu '%d' is NOT present ", k);
         }
         else
         {
-            printf("Yes the node with the value '%d' is present in the BST!!!", k);
+            printf("Yes the node  '%d' is present", k);
         }
     }
 
