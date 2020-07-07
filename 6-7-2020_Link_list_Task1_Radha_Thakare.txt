@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node
+{
+    int data;
+    struct node *next;
+};
+struct Node* head;
+void Insert(int x);
+{
+    Node* temp = (Node*)malloc(sizeof(struct Node));
+    temp->data = x;
+    temp->next = head;
+    head = temp;
+}
+void Print();
+{
+   struct Node* temp = head;
+   printf("List is: ");
+   while(temp!=Null)
+   {
+       printf(" %d",temp->data);
+       temp = temp->next;
+   }
+   printf("\n");
+   void Delete(int n1);
+   {
+       struct Node* temp = head;
+       if(n1 == 1)
+       {
+           head = temp->next;
+           free(temp);
+           return;
+       }
+       int j;
+       for(j=0;j<n-2;j++)
+       temp = temp->next;
+       struct Node* temp1 = temp->next;
+       temp->next = temp1->next;
+       free(temp1);
+   }
+
+
+int main()
+{
+    head = NULL;
+    printf("How many numbers?\n");
+    int n,i,x,n1;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("Enter the number \n");
+        scanf("%d",&x);
+        Insert(x);
+        Print();
+        printf("Enter position: \n");
+        scanf("%d",&n1);
+        Delete(n1);
+        Print();
+
+    }
+
+}
+}
