@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+#include<string.h>
+using namespace std;
+
+class String
+{
+    char *str;
+    public:
+    String(){ }
+    String(char *s)
+    {
+        int len=strlen(s);
+        str=new char[len+1];
+        strcpy(str, s);
+
+    }
+    void show(){
+        cout<<str;
+        std: : cout<<"s1="<<s1<<"s2="<<s2;
+    }
+    String operator +(String s){
+        String temp;
+        int len=strlen(str) + strlen(s.str);
+        temp.str = new char[len+1];
+        strcpy(temp.str,str);
+        strcat(temp.str,s.str);
+        return temp;
+            }
+    String operator *(String c)
+    {
+        String temp;
+        temp.s1=s1*c.s1;
+        temp.s2=s2*c.s2;
+        return(temp);
+    }
+};
+int main()
+{
+    String s1("Radha"),s2("Radha"),s3;
+    s3=s2+s1;
+    cout<<"\ns1 : ";
+    s1.show();
+    cout<<"\ns2 : ";
+    s2.show();
+    cout<<"\ns3 : ";
+    s3.show();
+    cout<<"Using * operator\n : ";
+    s3=s2*s1;
+    cout<<"\ns1 : ";
+    s1.show();
+    cout<<"\ns2 : ";
+    s2.show();
+    cout<<"\ns3 : ";
+    s3.show();
+
+    getch();
+    return 0;
+}
