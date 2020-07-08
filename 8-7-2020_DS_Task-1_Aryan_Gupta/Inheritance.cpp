@@ -8,7 +8,7 @@ protected:
 public:
     Personal()
     {    cout << "Pers Construct" << endl;
-        //default constructor;
+        
     }
     Personal(string firstname, string lastname , string address , int *mob ,string dob)
     {
@@ -136,10 +136,11 @@ public:
         cout << "Job Profile: " << org_name << endl;
         cout << "Project: " <<  project << endl;
         cout << "Academic Data" << endl;
-        cout << "Name of the College: " << college_name << endl;
-        cout << "Year of passing: " << year << endl;
+       
         cout << "Insert CGPA: " << cgpa << endl;
-        cout << "Insert branch: " << branch << endl;}
+        cout << "Insert branch: " << branch << endl;
+        cout << "College: " << college_name << endl;
+        cout << "Year of passing: " << year << endl;}
 
 
 };
