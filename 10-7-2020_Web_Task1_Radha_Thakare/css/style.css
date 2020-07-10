@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.about-section{
+    width: 700px;
+    height: 800px;
+    border: 1px solid black;
+    margin: 0px auto;
+}
+.about-section h1{
+    text-align:center;
+}
+p{
+    font: size 40px;
+}
+.project-title{
+    width: 100%;
+    padding: 5px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.Education{
+    width: 100%;
+    padding: 5px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    font-weight: bold;
+}
+ul{
+    font-size: 20px;
+    margin-left: 50px;
+}
