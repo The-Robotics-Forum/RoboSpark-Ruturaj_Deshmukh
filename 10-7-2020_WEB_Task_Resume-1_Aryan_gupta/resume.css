@@ -1,0 +1,23 @@
+.background
+{ position: fixed;
+  width:100%;
+  height: 100%;
+  background: linear-gradient(pu#2B2B52,#01CBC6);
+  padding: 2px;
+  margin: 07px;
+  top: 20px;
+  left: 7px;
+
+}
+h1
+{
+  color:#487EB0;
+}
+p{
+  color:#FF3E4D;
+  opacity: 2;
+}
+li{
+  color:#E74292;
+  opacity: 2;
+}
