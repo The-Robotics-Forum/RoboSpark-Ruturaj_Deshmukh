@@ -1,0 +1,25 @@
+body{
+
+        background-color: #1287A5;
+        font-family: 'Righteous', cursive;
+
+}
+h1{
+    color: #E74292;
+    font-size: 50px;
+
+}
+.space{
+    text-align: center;
+    padding-top: 200px;
+}
+.info-page{
+    background-color:#EC4849;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+}
+info-page.h2{
+
+        color: #2B2B52;
+}
